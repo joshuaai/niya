@@ -12,5 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require jquery.easing.1.3
+//= require jquery.noconflict
+//= require modernizr.2.7.1.min
+//= require jquery-migrate-1.2.1.min
+//= require jquery.placeholder
+//= require jquery-ui.1.10.4.min
+//= require jquery.bxslider.min
+//= require jquery.flexslider-min
+//= require jquery.stellar.min
+//= require waypoints.min
+//= require theme-scripts
+//= require script
 //= require turbolinks
 //= require_tree .
