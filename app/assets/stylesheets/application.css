@@ -13,12 +13,12 @@
  *= require bootstrap
  *= require font-awesome
  *= require animate.min
- *= jquery.bxslider
- *= flexslider
- *= style
- *= custom
- *= updates
- *= responsive
+ *= require jquery.bxslider
+ *= require flexslider
+ *= require style
+ *= require custom
+ *= require updates
+ *= require responsive
  *= require_tree .
  *= require_self
  */
