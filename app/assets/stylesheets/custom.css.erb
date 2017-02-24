@@ -1,10 +1,6 @@
-/*
- * Title:   Custom Style File
- * Author:  http://themeforest.net/user/soaptheme
- */
- .jumbotron {
+.jumbotron {
      position: relative;
-     background-image: url(<%= asset_path 'slide1.jpg' %>);
+     background-image: url(<%= asset_path "slide1.jpg" %>);
      background-size: cover;
      background-position: center center;
      margin-bottom: 30px;
@@ -36,9 +32,7 @@
 .search-for {
     padding: 10px 1px 1px 1px;
     margin-top: 50px;
-    background: url(../images/trans-black-30.png);
-    /*-webkit-border-radius: 5px;
-    -moz-border-radius: 5px;*/
+    background: url(<%= asset_path "trans-black-30.png" %>);
     border-radius: 5px;
 }
 
@@ -131,7 +125,6 @@
     color: white !important
 }
 
-/* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
     .weekdays li, .days li {width: 13.1%;}
 }
