@@ -15,8 +15,6 @@
  *= require animate.min
  *= require jquery.bxslider
  *= require flexslider
- *= require style
- *= require custom
  *= require updates
  *= require responsive
  *= require_tree .
