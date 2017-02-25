@@ -46,9 +46,7 @@
     <div class="bottom gray-area">
         <div class="container">
             <div class="logo pull-left">
-                <a href="index.html" title="NiYa - home">
-                    <img src="images/logo.png" alt="NiYa" />
-                </a>
+                <%= link_to image_tag("logo.png", alt: "NiYa"), venues_path, title: "NiYa - Home" %>
             </div>
             <div class="pull-right">
                 <a id="back-to-top" href="#" class="animated" data-animation-type="bounce"><i class="soap-icon-longarrow-up circle"></i></a>

@@ -1,7 +1,3 @@
-/*
- * Title:   NiYa | Book Your Perfect Venue - Main Javascript file
- * Author:  http://themeforest.net/user/soaptheme
- */
 
 String.prototype.lpad = function(padString, length) {
     var str = this;
@@ -21,7 +17,7 @@ tjq.fn.removeClassPrefix = function(prefix) {
 };
 
 // middle block plugin(set image in the middle of its parent object)
-;(function(window, document, $) {
+(function(window, document, $) {
     var middleblock;
     var prototype = $.fn;
     middleblock = prototype.middleblock = function() {
