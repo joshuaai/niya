@@ -2,35 +2,36 @@
  * Title:   Custom Style File
  * Author:  http://themeforest.net/user/soaptheme
  */
- .jumbotron {
-     position: relative;
-     background-image: url(<%= asset_path('slide1.jpg') %>);
-     background-size: cover;
-     background-position: center center;
-     margin-bottom: 30px;
-     text-align: center;
-     padding-bottom: 70px;
- }
+
+.jumbotron {
+    position: relative;
+    background-image: url(<%= asset_path('slide1.jpg') %>);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 70px;
+}
 
 .slidertext {
-  color: white;
-  font-size: 50px;
-  font-weight: bold;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .slidertextchild {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .btnvenuelist {
-  padding-top: 15px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  font-size: 15px;
-  text-align: center;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .search-for {
@@ -43,29 +44,27 @@
 }
 
 .steppings {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .belowsteppings {
-  font-size: 17px;
-  font-weight: bold;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .amenitieschecklist {
-  font-size: 15px;
-  border:0.5px solid #ccc;
-  width:300px;
-  height: 300px;
-  overflow-y: scroll;
-
-  border-radius: 25px;
-  padding: 10px;
-
+    font-size: 15px;
+    border: 0.5px solid #ccc;
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 .imageupload {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 .month {
@@ -121,7 +120,7 @@
     width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
-    font-size:12px;
+    font-size: 12px;
     color: #777;
 }
 
@@ -131,16 +130,29 @@
     color: white !important
 }
 
+
 /* Add media queries for smaller screens */
+
 @media screen and (max-width:720px) {
-    .weekdays li, .days li {width: 13.1%;}
+    .weekdays li,
+    .days li {
+        width: 13.1%;
+    }
 }
 
 @media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
-    .days li .active {padding: 2px;}
+    .weekdays li,
+    .days li {
+        width: 12.5%;
+    }
+    .days li .active {
+        padding: 2px;
+    }
 }
 
 @media screen and (max-width: 290px) {
-    .weekdays li, .days li {width: 12.2%;}
+    .weekdays li,
+    .days li {
+        width: 12.2%;
+    }
 }
