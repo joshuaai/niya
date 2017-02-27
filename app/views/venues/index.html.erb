@@ -228,4 +228,7 @@
 
 <p id="notice"><%= notice %></p>
 
-
+<%= form_tag({ controller: :mains, action: :search }, :method => "get") do %>
+    <%= text_field_tag :q, params[:q], placeholder: "Supplier or Service", required: true %>
+    <%= submit_tag "Search", class: "search-no-border btn-search" %>
+<% end %>
