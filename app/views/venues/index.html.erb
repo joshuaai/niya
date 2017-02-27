@@ -1,35 +1,231 @@
+<div class="page-title-container">
+            <div class="container">
+                <div class="page-title pull-left">
+                <h1 class="entry-title">My Venues</h1>
+                </div>
+                <ul class="breadcrumbs pull-right">
+                    <li><%= link_to 'New Venue', new_venue_path %></li>
+                </ul>
+            </div>
+</div>
+
+
+<section id="content">
+            <div class="container">
+                <div id="main">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3">
+                            <h4 class="search-results-title"><i class="soap-icon-search"></i><b>1,984</b> results found.</h4>
+                            <div class="toggle-container filters-container">
+                                <div class="panel style1 arrow-right">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#price-filter" class="collapsed">Price</a>
+                                    </h4>
+                                    <div id="price-filter" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-content">
+                                            <div id="price-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 10%; width: 70%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 10%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 80%;"></a></div>
+                                            <br>
+                                            <span class="min-price-label pull-left">R100</span>
+                                            <span class="max-price-label pull-right">R800</span>
+                                            <div class="clearer"></div>
+                                        </div><!-- end content -->
+                                    </div>
+                                </div>
+
+                                <div class="panel style1 arrow-right">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#rating-filter" class="collapsed">User Rating</a>
+                                    </h4>
+                                    <div id="rating-filter" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-content">
+                                            <div id="rating" class="five-stars-container editable-rating ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 80%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 80%;"></a></div>
+                                            <br>
+                                            <small>2458 REVIEWS</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel style1 arrow-right">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#modify-search-panel" class="">Modify Search</a>
+                                    </h4>
+                                    <div id="modify-search-panel" class="panel-collapse collapse in" style="height: auto;">
+                                        <div class="panel-content">
+                                            <form method="post">
+                                                <div class="form-group">
+                                                    <label>destination</label>
+                                                    <input type="text" class="input-text full-width" placeholder="" value="Johannesburg">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Date</label>
+                                                    <div class="datepicker-wrap">
+                                                        <input type="text" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488204655500"><img class="ui-datepicker-trigger" src="images/icon/blank.png" alt="" title="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Time</label>
+                                                        <div class="selector">
+                                                          <select class="full-width">
+                                                            <option value="1">12:00 AM</option>
+                                                            <option value="2">12:15 AM</option>
+                                                            <option value="3">12:30 AM</option>
+                                                            <option value="4">12:45 AM</option>
+                                                            <option value="5">01:00 AM</option>
+                                                            <option value="6">01:15 AM</option>
+                                                            <option value="7">01:30 AM</option>
+                                                            <option value="8">01:45 AM</option>
+                                                            <option value="9">02:00 AM</option>
+                                                            <option value="10">02:15 AM</option>
+                                                            <option value="11">02:30 AM</option>
+                                                            <option value="12">02:45 AM</option>
+                                                            <option value="13">03:00 AM</option>
+                                                            <option value="14">03:15 AM</option>
+                                                            <option value="15">03:30 AM</option>
+                                                            <option value="16">03:45 AM</option>
+                                                            <option value="17">04:15 AM</option>
+                                                            <option value="18">04:30 AM</option>
+                                                            <option value="19">04:45 AM</option>
+                                                            <option value="20">05:00 AM</option>
+                                                            <option value="21">05:15 AM</option>
+                                                            <option value="22">05:30 AM</option>
+                                                            <option value="23">05:45 AM</option>
+                                                            <option value="24">06:00 AM</option>
+                                                            <option value="25">06:15 AM</option>
+                                                            <option value="26">06:30 AM</option>
+                                                            <option value="27">06:45 AM</option>
+                                                            <option value="28">07:00 AM</option>
+                                                            <option value="29">07:15 AM</option>
+                                                            <option value="30">07:30 AM</option>
+                                                            <option value="31">07:45 AM</option>
+                                                            <option value="32">08:00 AM</option>
+                                                            <option value="33">08:15 AM</option>
+                                                            <option value="34">08:30 AM</option>
+                                                            <option value="35">08:45 AM</option>
+                                                            <option value="36">09:00 AM</option>
+                                                            <option value="37">09:15 AM</option>
+                                                            <option value="38">09:30 AM</option>
+                                                            <option value="39">09:45 AM</option>
+                                                            <option value="40">10:00 AM</option>
+                                                            <option value="41">10:15 AM</option>
+                                                            <option value="42">10:30 AM</option>
+                                                            <option value="43">10:45 AM</option>
+                                                            <option value="44">11:00 AM</option>
+                                                            <option value="45">11:15 AM</option>
+                                                            <option value="46">11:30 AM</option>
+                                                            <option value="47">11:45 AM</option>
+                                                            <option value="48">12:00 PM</option>
+                                                            <option value="49">12:15 PM</option>
+                                                            <option value="50">12:30 PM</option>
+                                                            <option value="51">12:45 PM</option>
+                                                            <option value="52">01:00 PM</option>
+                                                            <option value="53">01:15 PM</option>
+                                                            <option value="54">01:30 PM</option>
+                                                            <option value="55">01:45 PM</option>
+                                                            <option value="56">02:00 PM</option>
+                                                            <option value="57">02:15 PM</option>
+                                                            <option value="58">02:30 PM</option>
+                                                            <option value="59">02:45 PM</option>
+                                                            <option value="60">03:00 PM</option>
+                                                            <option value="61">03:15 PM</option>
+                                                            <option value="62">03:30 PM</option>
+                                                            <option value="63">03:45 PM</option>
+                                                            <option value="64">04:15 PM</option>
+                                                            <option value="65">04:30 PM</option>
+                                                            <option value="66">04:45 PM</option>
+                                                            <option value="67">05:00 PM</option>
+                                                            <option value="68">05:15 PM</option>
+                                                            <option value="69">05:30 PM</option>
+                                                            <option value="70">05:45 PM</option>
+                                                            <option value="71">06:00 PM</option>
+                                                            <option value="72">06:15 PM</option>
+                                                            <option value="73">06:30 PM</option>
+                                                            <option value="74">06:45 PM</option>
+                                                            <option value="75">07:00 PM</option>
+                                                            <option value="76">07:15 PM</option>
+                                                            <option value="77">07:30 PM</option>
+                                                            <option value="78">07:45 PM</option>
+                                                            <option value="79">08:00 PM</option>
+                                                            <option value="80">08:15 PM</option>
+                                                            <option value="81">08:30 PM</option>
+                                                            <option value="82">08:45 PM</option>
+                                                            <option value="83">09:00 PM</option>
+                                                            <option value="84">09:15 PM</option>
+                                                            <option value="85">09:30 PM</option>
+                                                            <option value="86">09:45 PM</option>
+                                                            <option value="87">10:00 PM</option>
+                                                            <option value="88">10:15 PM</option>
+                                                            <option value="89">10:30 PM</option>
+                                                            <option value="90">10:45 PM</option>
+                                                            <option value="91">11:00 PM</option>
+                                                            <option value="92">11:15 PM</option>
+                                                            <option value="93">11:30 PM</option>
+                                                            <option value="94">11:45 PM</option>
+                                                            
+                                                          </select><span class="custom-select full-width">12:00 AM</span>
+                                                        </div>
+                                                    </div>
+                                                <br>
+                                                <button class="btn-medium icon-check uppercase full-width">search again</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-9">
+                            <div class="sort-by-section clearfix">
+                                <h4 class="sort-by-title block-sm">Sort results by:</h4>
+                                <ul class="sort-bar clearfix block-sm">
+                                    <li class="sort-by-name"><a class="sort-by-container" href="#"><span>name</span></a></li>
+                                    <li class="sort-by-price"><a class="sort-by-container" href="#"><span>price</span></a></li>
+                                    <li class="clearer visible-sms"></li>
+                                    <li class="sort-by-rating active"><a class="sort-by-container" href="#"><span>rating</span></a></li>
+                                    <li class="sort-by-popularity"><a class="sort-by-container" href="#"><span>popularity</span></a></li>
+                                </ul>
+
+                                
+                            </div>
+                            <div class="hotel-list">
+                                <div class="row image-box hotel listing-style1">
+                                <% @venues.each do |venue| %>
+                                    <div class="col-sm-6 col-md-4">
+                                        <article class="box">
+                                            <figure>
+                                                <a><%= image_tag(venue.featured_image, width: "270", height: "160", src: "http://placehold.it/270x160") %></a>
+                                            </figure>
+                                            <div class="details">
+                                                <span class="price">
+                                                    <small>AVG</small>
+                                                    ZAR: <%= venue.price %>
+                                                </span>
+                                                <h4 class="box-title"><%= venue.name %>
+                                                <small><%= venue.location %></small></h4>
+                                                <div class="feedback">
+                                                    <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                                                    <span class="review">Size: <b> [<%= venue.size %>] </b> square feet</span>
+                                                </div>
+                                                <p class="description"><%= venue.description %></p>
+                                                <div class="action">
+                                                    <a><%= link_to 'Show', venue, class: "button btn-small" %></a>
+                                                    <a><%= link_to 'Edit', edit_venue_path(venue), class: "button btn-small" %></a>
+                                                    <a data-box="48.856614, 2.352222"><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' }, class: "button btn-small yellow popup-map", 'data-box'=> "48.856614, 2.352222" %></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <% end %>
+                                </div>
+                            </div>
+                            <a href="#" class="uppercase full-width button btn-large">load more listing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                                               
+
 <p id="notice"><%= notice %></p>
 
-<h1>Venues</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Location</th>
-      <th>Size</th>
-      <th>Featured image</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @venues.each do |venue| %>
-      <tr>
-        <td><%= venue.name %></td>
-        <td><%= venue.location %></td>
-        <td><%= venue.size %></td>
-        <td><%= venue.featured_image %></td>
-        <td><%= venue.user_id %></td>
-        <td><%= link_to 'Show', venue %></td>
-        <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
-        <td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Venue', new_venue_path %>

@@ -13,25 +13,25 @@
 
   <div class="field">
     <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
+    <%= f.text_field :first_name, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+    <%= f.text_field :last_name, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :password_digest %>
-    <%= f.text_field :password_digest %>
+    <%= f.text_field :password_digest, class: "input-text full-width" %>
   </div>
 
-  <div class="actions">
+  <div class="actions action btn-hot text-capitalize submit btn pull-right">
     <%= f.submit %>
   </div>
 <% end %>

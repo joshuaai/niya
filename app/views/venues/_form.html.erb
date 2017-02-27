@@ -13,30 +13,40 @@
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "input-text full-width" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :location %>
-    <%= f.text_field :location %>
+    <%= f.text_field :location, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :size %>
-    <%= f.number_field :size %>
+    <%= f.number_field :size, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :featured_image %>
-    <%= f.text_field :featured_image %>
+    <%= f.text_field :featured_image, class: "input-text full-width" %>
   </div>
 
   <div class="field">
     <%= f.label :user_id %>
-    <%= f.number_field :user_id %>
+    <%= f.number_field :user_id, class: "input-text full-width" %>
   </div>
 
-  <div class="actions">
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.number_field :price, class: "input-text full-width" %>
+  </div>
+
+  <div class="actions action btn-hot text-capitalize submit btn pull-right">
     <%= f.submit %>
   </div>
 <% end %>

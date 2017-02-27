@@ -6,6 +6,8 @@ class CreateVenues < ActiveRecord::Migration[5.0]
       t.integer :size
       t.string :featured_image
       t.integer :user_id
+      t.integer :price
+      t.string  :description
 
       t.timestamps
     end

@@ -1,5 +1,32 @@
-<h1>New User</h1>
-
-<%= render 'form', user: @user %>
-
-<%= link_to 'Back', users_path %>
+<div class="page-title-container">
+            <div class="container">
+                <div class="page-title pull-left">
+                <h1 class="entry-title">New User</h1>
+                </div>
+                <ul class="breadcrumbs pull-right">
+                    <li><a href="#">HOME</a></li>
+                    <li class="active">New User</li>
+                </ul>
+            </div>
+</div>
+<section id="content">
+            <div class="container">
+                <div class="row">
+                    <div id="main" class="col-sm-8 col-md-9">
+                        <div class="travelo-box booking-section">
+                            <div class="booking-form">
+                                <div class="person-information">
+                                    
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 col-md-5">
+                                        <%= render 'form', user: @user %>
+                                        <%= link_to 'Back', users_path %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
