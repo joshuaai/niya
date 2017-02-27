@@ -1,7 +1,7 @@
 <div class = "jumbotron">
     <div class = "container">
         <br /><br /><br /><br />
-        <span class="slidertext">Book Venue Spaces</span>
+        <span class="slidertext">Discover & Book Unutilised Spaces for Events</span>
         <br /><br />
         <span class="slidertextchild">Search venues, compare prices, book and pay</span>
         <br /><br /><br />
@@ -165,48 +165,53 @@
                 <div class="col-sms-6 col-sm-6 col-md-3">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInDown" data-animation-duration="1">
-                            <a href="ajax/slideshow-popup.html" title="" class="hover-effect popup-gallery">
-                            <img src="/assets/venueone/1.jpg" alt="" width="270" height="160" /></a>
+                           <%= link_to image_tag('venueone/1.jpg', alt: ""), "ajax/slideshow-popup1.html", class: "hover-effect popup-gallery" %>
                         </figure>
                         <div class="details">
                             <span class="price"><small>FROM</small>R620</span>
-                            <h4 class="box-title"><a href="meeting-detailed.html">SunnySide Villas<small>Pretoria, Gauteng</small></a></h4>
+                            <h4 class="box-title">
+                            <%= link_to "Sunnyside Villas<small>Pretoria, Gauteng</small>".html_safe, 'meeting-detailed.html' %>
+                            </h4>
+                            
                         </div>
                     </article>
                 </div>
                 <div class="col-sms-6 col-sm-6 col-md-3">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInDown" data-animation-duration="1" data-animation-delay="0.3">
-                            <a href="ajax/slideshow-popup1.html" title="" class="hover-effect popup-gallery">
-                            <img src="/assets/venuetwo/1.jpg" alt="" width="270" height="160" /></a>
+                            <%= link_to image_tag('venuetwo/1.jpg', alt: "", width: "270", height: "160"), "ajax/slideshow-popup1.html", class: "hover-effect popup-gallery" %>
                         </figure>
                         <div class="details">
                             <span class="price"><small>FROM</small>R1500</span>
-                            <h4 class="box-title"><a href="meeting-detailed1.html">Mnandi Plaza<small>Ulundi, Kwazulu-natal</small></a></h4>
+                            <h4 class="box-title">
+                            <%= link_to "Mnandi Plaza<small>Ulundi, Kwazulu-natal</small>".html_safe, 'meeting-detailed1.html' %>
+                            </h4>
                         </div>
                     </article>
                 </div>
                 <div class="col-sms-6 col-sm-6 col-md-3">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInDown" data-animation-duration="1" data-animation-delay="0.6">
-                            <a href="ajax/slideshow-popup2.html" title="" class="hover-effect popup-gallery">
-                            <img src="/assets/venuethree/1.jpg" alt="" width="270" height="160" /></a>
+                            <%= link_to image_tag('venuethree/1.jpg', alt: "", width: "270", height: "160"), "ajax/slideshow-popup2.html", class: "hover-effect popup-gallery" %>
                         </figure>
                         <div class="details">
                             <span class="price"><small>FROM</small>R130</span>
-                            <h4 class="box-title"><a href="meeting-detailed2.html">MGM Grand<small>Durban, Kwazulu-natal</small></a></h4>
+                            <h4 class="box-title">
+                            <%= link_to "MGM Grand<small>Durban, Kwazulu-natal</small>".html_safe, 'meeting-detailed2.html' %>
+                            </h4>
                         </div>
                     </article>
                 </div>
                 <div class="col-sms-6 col-sm-6 col-md-3">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInDown" data-animation-duration="1" data-animation-delay="0.9">
-                            <a href="ajax/slideshow-popup3.html" title="" class="hover-effect popup-gallery">
-                            <img src="/assets/venuefour/1.jpg" alt="" width="270" height="160" /></a>
+                            <%= link_to image_tag('venuefour/1.jpg', alt: "", width: "270", height: "160"), "ajax/slideshow-popup3.html", class: "hover-effect popup-gallery" %>
                         </figure>
                         <div class="details">
                             <span class="price"><small>FROM</small>R290</span>
-                            <h4 class="box-title"><a href="meeting-detailed3.html">Crown Casino<small>Vryheid, Kwazulu-natal</small></a></h4>
+                            <h4 class="box-title">
+                            <%= link_to "Crown Casino<small>Vryheid, Kwazulu-natal</small>".html_safe, 'meeting-detailed3.html' %>
+                            </h4>
                         </div>
                     </article>
                 </div>
@@ -227,30 +232,29 @@
                     <div class="col-xs-4">
                         <article class="box">
                             <figure>
-                                <a href="meetings-grid-view.html" title="" class="hover-effect yellow middle-block animated" data-animation-type="fadeInUp" data-animation-duration="1">
-                                    <img src="/assets/venuethree/1.jpg" alt="" /></a>
+                                <%= link_to image_tag('venuethree/1.jpg', alt: ""), "meetings-grid-view.html", class: "hover-effect yellow middle-block animated", :"data-animation-type"=> "fadeInUp", :"data-animation-duration"=> "1" %>
                             </figure>
                             <div class="details">
                                 <h4 class="box-title">Eastern Cape<small>(422 PLACES)</small></h4>
-                                <a href="meetings-grid-view.html" title="" class="button">SEE ALL</a>
+                                <%= link_to "SEE ALL", 'meetings-grid-view.html', class: "button" %>
                             </div>
                         </article>
                     </div>
                     <div class="col-xs-4">
                         <article class="box">
                             <figure>
-                                <a href="meetings-grid-view.html" title="" class="hover-effect yellow middle-block animated" data-animation-type="fadeInUp" data-animation-duration="1" data-animation-delay="0.4"><img src="/assets/venueone/1.jpg" alt="" /></a>
+                                <%= link_to image_tag('venueone/1.jpg', alt: ""), "meetings-grid-view.html", class: "hover-effect yellow middle-block animated", :"data-animation-type"=> "fadeInUp", :"data-animation-duration"=>"1", :"data-animation-delay"=> "0.4" %>
                             </figure>
                             <div class="details">
                                 <h4 class="box-title">Pretoria<small>(70 PLACES)</small></h4>
-                                <a href="meetings-grid-view.html" title="" class="button">SEE ALL</a>
+                                <%= link_to "SEE ALL", 'meetings-grid-view.html', class: "button" %>
                             </div>
                         </article>
                     </div>
                     <div class="col-xs-4">
                         <article class="box">
                             <figure>
-                                <a href="meetings-grid-view.html" title="" class="hover-effect yellow middle-block animated" data-animation-type="fadeInUp" data-animation-duration="1" data-animation-delay="0.8"><img src="/assets/venuetwo/2.jpg" alt="" /></a>
+                                <%= link_to image_tag('venuetwo/2.jpg', alt: ""), "meetings-grid-view.html", class: "hover-effect yellow middle-block animated", :"data-animation-type"=> "fadeInUp", :"data-animation-duration"=> "1", :"data-animation-delay"=> "0.8" %>
                             </figure>
                             <div class="details">
                                 <h4 class="box-title">KZN<small>(500 PLACES)</small></h4>
@@ -274,48 +278,48 @@
                 <div class="col-md-6">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInLeft" data-animation-duration="1">
-                            <a href="#" title=""><img src="/assets/homeimages/meetings.jpg" alt="" width="270" height="192" /></a>
+                            <%= link_to image_tag('homeimages/meetings.jpg', alt: "", width: "270", height: "192"), "#" %>
                         </figure>
                         <div class="details">
                             <h4>Meetings</h4>
                             <p>Find the perfect venue for your corporate meeting. Choose from thousands of hand-picked venues from all across South Africa</p>
-                            <a href="meetings-grid-view.html" title="" class="button">SEE ALL</a>
+                            <%= link_to "SEE ALL", 'meetings-grid-view.html', class: "button" %>
                         </div>
                     </article>
                 </div>
                 <div class="col-md-6">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInLeft" data-animation-duration="1" data-animation-delay="0.4">
-                            <a href="#" title=""><img src="/assets/homeimages/weddings.jpg" alt="" width="270" height="192" /></a>
+                            <%= link_to image_tag('homeimages/weddings.jpg', alt: "", width: "270", height: "192"), "#" %>
                         </figure>
                         <div class="details">
                             <h4>Weddings</h4>
                             <p>Your wedding can be hosted in castel. Simply browse through our incredible venues available for your special occasion</p>
-                            <a href="meetings-grid-view.html" title="" class="button">SEE ALL</a>
+                            <%= link_to "SEE ALL", 'meetings-grid-view.html', class: "button" %>
                         </div>
                     </article>
                 </div>
                 <div class="col-md-6">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInLeft" data-animation-duration="1">
-                            <a href="#" title=""><img src="/assets/homeimages/conferences.jpg" alt="" width="270" height="192" /></a>
+                            <%= link_to image_tag('homeimages/conferences.jpg', alt: "", width: "270", height: "192"), "#" %>
                         </figure>
                         <div class="details">
                             <h4>Conferences</h4>
                             <p>Need space for your conference. We have hand-picked the perfect venues just for your event. Simply browse our gallery and select your pick</p>
-                            <a href="meetings-grid-view.html" title="" class="button">SEE ALL</a>
+                            <%= link_to "SEE ALL", 'meetings-grid-view.html', class: "button" %>
                         </div>
                     </article>
                 </div>
                 <div class="col-md-6">
                     <article class="box">
                         <figure class="animated" data-animation-type="fadeInLeft" data-animation-duration="1" data-animation-delay="0.4">
-                            <a href="#" title=""><img src="/assets/homeimages/parties.jpg" alt="" width="270" height="192" /></a>
+                            <%= link_to image_tag('homeimages/parties.jpg', alt: "", width: "270", height: "192"), "#" %>
                         </figure>
                         <div class="details">
                             <h4>Parties</h4>
                             <p>A sophisticated happy hour at any of our many party venues. Select where you'd like to have your next party</p>
-                            <a href="meetings-grid-view.html" title="" class="button">SEE ALL</a>
+                            <%= link_to "SEE ALL", 'meetings-grid-view.html', class: "button" %>
                         </div>
                     </article>
                 </div>
@@ -333,7 +337,9 @@
                             <span class="opacity-wrapper"></span>
                         </figure>
                         <div class="details">
-                            <h4><a href="#">Best Price Guarantee</a></h4>
+                            <h4>
+                            <%= link_to "Best Price Guarantee", '#' %>
+                            </h4>
                             <p>
                                 Book your venues through us at unbeatable prices and value
                             </p>
@@ -347,7 +353,9 @@
                             <span class="opacity-wrapper"></span>
                         </figure>
                         <div class="details">
-                            <h4><a href="#">Availability</a></h4>
+                            <h4>
+                            <%= link_to "Availability", '#' %>
+                            </h4>
                             <p>
                                 Simply select a venue and check it's avilability
                             </p>
@@ -361,7 +369,9 @@
                             <span class="opacity-wrapper"></span>
                         </figure>
                         <div class="details">
-                            <h4><a href="#">Why Chose Us</a></h4>
+                            <h4>
+                            <%= link_to "Why Choose Us", '#' %>
+                            </h4>
                             <p>
                                 Choose from 1000+ venues and book at discounted prices
                             </p>
@@ -375,7 +385,9 @@
                             <span class="opacity-wrapper"></span>
                         </figure>
                         <div class="details">
-                            <h4><a href="#">Need Help?</a></h4>
+                            <h4>
+                            <%= link_to "Need Help?", '#' %>
+                            </h4>
                             <p>
                                 Our customer support is available 24x7 to help you
                             </p>

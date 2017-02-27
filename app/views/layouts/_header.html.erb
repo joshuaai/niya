@@ -35,17 +35,17 @@
 
         <div class="container">
             <h1 class="logo navbar-brand">
-                <%= link_to image_tag('logo.png', alt: "NiYa"), root_path, title: "NiYa - Home" %>
+                <%= link_to(image_tag('logo.png', :alt => "NiYa", :title => "NiYa - Home"),"/")%>
             </h1>
 
             <nav id="main-menu" role="navigation">
                 <ul class="menu">
                     <li class="menu-item-has-children">
-                        <a href="index.html">Home</a>
+                        <%= link_to "Home", root_path %>
                     </li>
                     <li class="menu-item-has-children">
                         <button class="btnvenuelist">
-                        <a href="venue-listing.html">List Your Venue</a>
+                        <%= link_to "List Your Venue", new_venue_path %>
                         </button>
                     </li>
 
@@ -56,10 +56,10 @@
         <nav id="mobile-menu-01" class="mobile-menu collapse">
             <ul id="mobile-primary-menu" class="menu">
                 <li class="menu-item-has-children">
-                    <a href="index.html">Home</a>
+                    <%= link_to "Home", root_path %>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="venue-listing.html">List Your Venue</a>
+                    <%= link_to "List Your Venue", new_venue_path %>
                 </li>
             </ul>
 
@@ -147,7 +147,7 @@
                 <a href="#" class="forgot-password pull-right">Forgot password?</a>
                 <div class="checkbox checkbox-inline">
                     <label>
-                        <input type="checkbox"> Remember me
+                        <input type="checkbox"> Remember me</input>
                     </label>
                 </div>
             </div>

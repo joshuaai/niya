@@ -1,5 +1,49 @@
-<h1>New Venue</h1>
-
-<%= render 'form', venue: @venue %>
-
-<%= link_to 'Back', venues_path %>
+<div class="page-title-container">
+            <div class="container">
+                <div class="page-title pull-left">
+                <h1 class="entry-title">New Venue</h1>
+                </div>
+                <ul class="breadcrumbs pull-right">
+                    <li><a href="#">HOME</a></li>
+                    <li class="active">New Venue</li>
+                </ul>
+            </div>
+</div>
+<section id="content">
+            <div class="container">
+                <div id="main">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3">
+                            <h4 class="search-results-title"><b>Fill in the form to list venue</b></h4>
+                            <div class="toggle-container filters-container">
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-9">
+                            
+                            <div class="hotel-list">
+                                <div class="row image-box hotel listing-style1">
+                                    <div class="col-sm-6 col-md-10">
+                                        <article class="box">
+                                            <figure>
+                                                <a></a>
+                                            </figure>
+                                            <div class="details">
+                                                <div class="feedback">
+                                                    <%= render 'form', venue: @venue %>
+                                                    <%= link_to 'Back', venues_path %>
+                                                </div>
+                                                <p class="description"></p>
+                                                <div class="action">
+                                                </div>
+                                                
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
