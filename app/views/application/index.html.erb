@@ -11,17 +11,17 @@
             <div class="search-box container">
                 <div class="search-tab-content">
                     <div class="tab-pane fade active in" id="hotels-tab">
-                        <form action="meetings-grid-view.html" method="post">
+                        <%= form_tag({ controller: :mains, action: :search }, :method => "get") do %>
                             <div class="row search-for">
                                 <div class="form-group col-sm-6 col-md-3">
-                                    <input type="text" class="input-text full-width" placeholder="search for city or venue name" />
+                                    <%= text_field_tag :q, params[:q], placeholder: "search for city or venue name", required: true, class: "input-text full-width" %>
                                 </div>
 
                                 <div class="form-group col-sm-6 col-md-4">
                                     <div class="row">
                                         <div class="col-xs-6">
                                             <div class="datepicker-wrap">
-                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                                <%= date_field_tag :date_to_book %>
                                             </div>
                                         </div>
                                         <div class="col-xs-6">
@@ -145,10 +145,10 @@
                                 </div>
 
                                 <div class="form-group col-sm-6 col-md-2">
-                                    <button type="submit" class="full-width icon-check">SEARCH NOW</button>
+                                   <%= button_tag "Search Now" ,class: "full-width icon-check" %>
                                 </div>
                             </div>
-                        </form>
+                        <% end %>
                     </div>
                 </div><!-- End of search-tab-content -->
             </div> <!-- End of search-box container -->
@@ -398,3 +398,10 @@
         </div>
     </div>
 </section>
+
+<p id="notice"><%= notice %></p>
+
+<%= form_tag({ controller: :mains, action: :search }, :method => "get") do %>
+    <%= text_field_tag :q, params[:q], placeholder: "Supplier or Service", required: true %>
+    <%= submit_tag "Search", class: "search-no-border btn-search" %>
+<% end %>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'application#index'
   resources :venues
   resources :users
+  resources :bookings
 
   get 'mains/search', to: 'mains#search'
 end
