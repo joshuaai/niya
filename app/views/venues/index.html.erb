@@ -15,7 +15,6 @@
                 <div id="main">
                     <div class="row">
                         <div class="col-sm-4 col-md-3">
-                            <h4 class="search-results-title"><i class="soap-icon-search"></i><b>1,984</b> results found.</h4>
                             <div class="toggle-container filters-container">
                                 <div class="panel style1 arrow-right">
                                     <h4 class="panel-title">
@@ -217,7 +216,6 @@
                                     <% end %>
                                 </div>
                             </div>
-                            <a href="#" class="uppercase full-width button btn-large">load more listing</a>
                         </div>
                     </div>
                 </div>
@@ -228,7 +226,3 @@
 
 <p id="notice"><%= notice %></p>
 
-<%= form_tag({ controller: :mains, action: :search }, :method => "get") do %>
-    <%= text_field_tag :q, params[:q], placeholder: "Supplier or Service", required: true %>
-    <%= submit_tag "Search", class: "search-no-border btn-search" %>
-<% end %>
