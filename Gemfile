@@ -12,6 +12,12 @@ gem 'rails', '~> 5.0.1'
 gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+# Carrierwave for image upload. Will work with Cloudinary below.
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+# Use Cloudinary for picture upload
+gem 'cloudinary'
+# Minimagick for thumbnails 
+gem 'mini_magick'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20170301162145) do
+=======
 ActiveRecord::Schema.define(version: 20170228135901) do
+>>>>>>> upstream/master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,13 +41,18 @@ ActiveRecord::Schema.define(version: 20170228135901) do
   create_table "venues", force: :cascade do |t|
     t.string   "name"
     t.string   "location"
+<<<<<<< HEAD
+    t.integer  "size"
+=======
     t.string   "size"
     t.string   "featured_image"
+>>>>>>> upstream/master
     t.integer  "user_id"
     t.integer  "price"
     t.string   "description"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.string   "featured_image"
   end
 
 end
