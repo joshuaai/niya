@@ -18,11 +18,11 @@ class FeaturedImageUploader < CarrierWave::Uploader::Base
   end
 
   version :conman do
-    process :resize_to_fill => [1600, 1200, :north]
+    process :resize_to_fill => [900, 500, :north]
   end
   
   version :thumbnail do
-    resize_to_fit(50, 50)
+    resize_to_fit(190, 120)
   end
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
