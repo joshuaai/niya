@@ -190,7 +190,7 @@
                                     <div class="col-sm-6 col-md-4">
                                         <article class="box">
                                             <figure>
-                                                <a><%= image_tag(venue.featured_image, width: "270", height: "160", src: "http://placehold.it/270x160") %></a>
+                                                <a><%= image_tag(venue.featured_image.url(:conman)) %></a>
                                             </figure>
                                             <div class="details">
                                                 <span class="price">
@@ -207,7 +207,7 @@
                                                 <div class="action">
                                                     <a><%= link_to 'Show', venue, class: "button btn-small" %></a>
                                                     <a><%= link_to 'Edit', edit_venue_path(venue), class: "button btn-small" %></a>
-                                                    <a data-box="48.856614, 2.352222"><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' }, class: "button btn-small yellow popup-map", 'data-box'=> "48.856614, 2.352222" %></a>
+                                                    <a data-box="48.856614, 2.352222"><%= link_to 'Delete', venue, method: :delete, data: { confirm: 'Are you sure?' }, class: "button btn-small yellow popup-map", 'data-box'=> "48.856614, 2.352222" %></a>
                                                 </div>
                                                 
                                             </div>

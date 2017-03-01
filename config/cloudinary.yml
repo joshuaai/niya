@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: niya
+  api_key: '655629742261369'
+  api_secret: rHUw38SSzkhR0yijjyoTA0u6fKU
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: niya
+  api_key: '655629742261369'
+  api_secret: rHUw38SSzkhR0yijjyoTA0u6fKU
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: niya
+  api_key: '655629742261369'
+  api_secret: rHUw38SSzkhR0yijjyoTA0u6fKU
+  enhance_image_tag: true
+  static_image_support: false

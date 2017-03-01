@@ -33,7 +33,8 @@
 
   <div class="field">
     <%= f.label :featured_image %>
-    <%= f.text_field :featured_image, class: "input-text full-width" %>
+    <%= f.file_field :featured_image, class: "input-text full-width" %>
+    <%= f.hidden_field(:featured_image_cache) %>
   </div>
 
   <div class="field">
