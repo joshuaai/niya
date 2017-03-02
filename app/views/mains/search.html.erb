@@ -190,7 +190,7 @@
                                         <article class="box">
                                             <figure>
                                                 <%= link_to venue_path(i.id) do %> 
-                                                    <%= image_tag(i.featured_image) %>
+                                                    <%= image_tag(i.featured_image.url(:thumbnail)) %>
                                                 <% end %>
                                             </figure>
                                             <div class="details">
