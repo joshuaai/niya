@@ -38,8 +38,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :user_id %>
-    <%= f.number_field :user_id, class: "input-text full-width" %>
+   <%= f.number_field :user_id, { class: "input-text full-width", type: "hidden", value: "1" } %>
   </div>
 
   <div class="field">
