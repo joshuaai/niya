@@ -42,7 +42,6 @@
                                     <div class="col-sm-6 col-md-4 no-float no-padding">
                                         <div class="selector">
                                             <select class="full-width" id="select-month">
-                                                <option value="2017-2">February 2017</option>
                                                 <option value="2017-3">March 2017</option>
                                                 <option value="2017-4">April 2017</option>
                                                 <option value="2017-5">May 2017</option>
@@ -54,25 +53,44 @@
                                                 <option value="2017-11">November 2017</option>
                                                 <option value="2017-12">December 2017</option>
                                             </select>
+                                
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            <div class="calendar"></div>
+                                            <div class="calendar"><table><thead><tr><td>sunday</td>
+                                            <td>monday</td><td>tuesday</td><td>wednesday</td><td>thursday</td>
+                                            <td>friday</td><td>saturday</td></tr></thead>
+                                            <tbody><tr><td class="prev-month"></td><td class="prev-month"></td>
+                                            <td class="prev-month"></td><td class=" date-passed"><span>1</span></td>
+                                            <td class=" today available"><a href="#">2</a></td><td class=" available"><a href="#">3<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">4<span class="price-text">ZAR: <%= @venue.price %></span></a></td></tr>
+                                            <tr><td class=" available"><a href="#">5<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">6<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">7<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">8<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">9<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">10<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">11<span class="price-text">ZAR: <%= @venue.price %></span></a></td></tr>
+                                            <tr><td class=" available"><a href="#">12<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">13<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">14<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">15<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" available"><a href="#">16<span class="price-text">ZAR: <%= @venue.price %></span></a></td>
+                                            <td class=" unavailable"><span>17</span></td><td class=" unavailable"><span>18</span></td></tr>
+                                            <tr><td class=" unavailable"><span>19</span></td><td class=" unavailable"><span>20</span></td>
+                                            <td class=" unavailable"><span>21</span></td><td class=" unavailable"><span>22</span></td>
+                                            <td class=" unavailable"><span>23</span></td><td class=" unavailable"><span>24</span></td>
+                                            <td class=" unavailable"><span>25</span></td></tr><tr><td class=" unavailable"><span>26</span></td>
+                                            <td class=" unavailable"><span>27</span></td><td class=" unavailable"><span>28</span></td>
+                                            <td class=" unavailable"><span>29</span></td><td class=" unavailable"><span>30</span></td>
+                                            <td class=" unavailable"><span>31</span></td></tr></tbody></table>
+                                            </div>
                                             <div class="calendar-legend">
                                                 <label class="available">available</label>
                                                 <label class="unavailable">unavailable</label>
                                                 <label class="past">past</label>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="description">
-                                                The calendar is updated every five minutes and is only an approximation of availability.
-<br /><br />
-Some hosts set custom pricing for certain days on their calendar, like weekends or holidays. The rates listed are per day and do not include any cleaning fee or rates for extra people the host may have for this listing. Please refer to the listing's Description tab for more details.
-<br /><br />
-We suggest that you contact the host to confirm availability and rates before submitting a reservation request.
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -106,34 +124,31 @@ We suggest that you contact the host to confirm availability and rates before su
                                             <div class="icon-box style1"><i class="soap-icon-aircon"></i>Air Conditioning</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-fitnessfacility"></i>Lighting System</div>
+                                            <div class="icon-box style1"><i class="soap-icon-error"></i>Lighting System</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
                                             <div class="icon-box style1"><i class="soap-icon-fridge"></i>Lounge Furniture</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-winebar"></i>Natural Light</div>
+                                            <div class="icon-box style1"><i class="soap-icon-photogallery"></i>Photography Lighting</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-smoking"></i>Photography Lighting</div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-entertainment"></i>Projector</div>
+                                            <div class="icon-box style1"><i class="soap-icon-plans"></i>Projector</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
                                             <div class="icon-box style1"><i class="soap-icon-securevault"></i>Screen</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-pickanddrop"></i>Sound System</div>
+                                            <div class="icon-box style1"><i class="soap-icon-fmstereo"></i>Sound System</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-phone"></i>Stage</div>
+                                            <div class="icon-box style1"><i class="soap-icon-magazine"></i>Stage</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-pets"></i>Whiteboard</div>
+                                            <div class="icon-box style1"><i class="soap-icon-securevault"></i>Whiteboard</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-playplace"></i>Bathrooms</div>
+                                            <div class="icon-box style1"><i class="soap-icon-family"></i>Bathrooms</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
                                             <div class="icon-box style1"><i class="soap-icon-breakfast"></i>Tableware</div>
@@ -142,7 +157,7 @@ We suggest that you contact the host to confirm availability and rates before su
                                             <div class="icon-box style1"><i class="soap-icon-parking"></i>Free parking</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
-                                            <div class="icon-box style1"><i class="soap-icon-conference"></i>Additional Chairs</div>
+                                            <div class="icon-box style1"><i class="soap-icon-passenger"></i>Additional Chairs</div>
                                         </li>
                                         <li class="col-md-4 col-sm-6">
                                             <div class="icon-box style1"><i class="soap-icon-fireplace"></i>fire place</div>
@@ -307,75 +322,6 @@ We suggest that you contact the host to confirm availability and rates before su
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="content">
-            <div class="container">
-                <div id="main">
-                    <div class="row">
-                        <div class="col-sm-4 col-md-3">
-                        <h4 class="search-results-title"><b>View your venue details</b></h4>
-                            
-                        </div>
-                        <div class="notify">
-                        </div>
-                        <div class="col-sm-8 col-md-9">
-                            <div class="hotel-list">
-                                <div class="row image-box hotel listing-style1">
-                                    <div class="col-sm-6 col-md-6">
-                                        <article class="box">
-                                            <figure>
-                                                <p>
-                                                
-                                                   <%= image_tag(@venue.featured_image.url(:standard)) %>
-                                                </p>
-                                            </figure>
-                                            <div class="details">
-                                                <span class="price">
-                                                    <small>AVG</small>
-                                                    ZAR: <%= @venue.price %>
-                                                </span>
-                                                <h4 class="box-title"><%= @venue.name %>
-                                                <small><%= @venue.location %></small></h4>
-                                                <div class="feedback">
-                                                    <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                    <span class="review">Size: <b> [<%= @venue.size %>] </b> square feet</span>
-                                                </div>
-                                                <p class="description"><%= @venue.description %></p>
-                                                <div class="action">
-                                                    <a><%= link_to 'Edit', edit_venue_path(@venue), class: "button btn-small" %></a>
-                                                    <%= link_to 'Back', venues_path, class: "button btn-small" %>
-                                                     <%= date_field_tag :date_to_book %>
-                                                     <%= submit_tag "Book", id: "booking-date" %>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       
-
-
 <p id="notice"><%= notice %></p>
 
 
@@ -403,12 +349,12 @@ $(document).ready(function(e){
 
             success: function(resp){
                 //alert("day booked");
-                $('.notify').prepend("<div class='alert alert-success'><button aria-hidden='true' data-dismiss='alert' class='close' type='button'> x </button> Date successfully booked </div>");
+                $('#hotel-main-content').prepend("<div class='alert alert-success'><button aria-hidden='true' data-dismiss='alert' class='close' type='button'> x </button> Date successfully booked </div>");
                 //ui to display that date was succesfullly booked
                 $('#date_to_book').val("");
             },
             fail: function(resp){
-                $('.notify').prepend("<div class='alert alert-danger'><button aria-hidden='true' data-dismiss='alert' class='close' type='button'> x </button> Date successfully booked </div>");
+                $('#hotel-main-content').prepend("<div class='alert alert-danger'><button aria-hidden='true' data-dismiss='alert' class='close' type='button'> x </button> Date successfully booked </div>");
                 $('#date_to_book').val("");
                 //alert("date was not booked");
                 //ui to display if an error happens along the way
